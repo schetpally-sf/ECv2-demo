@@ -15,14 +15,19 @@
     h1 {
       text-align: center;
     }
-	  .chat-container {
-	  	min-height : 800px;
-	  }
+	.chat-container {
+      height: 700px;      /* explicit height, not min-height */
+      width: 100%;
+      position: relative;
+    }
+    .chat-container iframe {
+      height: 100% !important;  /* only if the iframe still collapses */
+    }
   </style>
 </head>
 
 <body>
-  	<h1>ECv2 demo test 2.6</h1>
+  	<h1>ECv2 demo test 2.7</h1>
 </body>	
 <div class='chat-container'></div>
 
